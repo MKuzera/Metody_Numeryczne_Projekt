@@ -9,6 +9,19 @@ import numpy as np
 Co_liczy=  "f(x) = x^2 * cos^3(x)"
 
 
+def get_wsp_A():
+   file = open("Zajecia_6_Kwadratura_Trapez/kwadratury_gr_3.txt", "r")
+   line = file.readline()
+   line2 = line.split()
+   N = int(line2[2])
+   line = file.readline()
+   line = file.readline()
+   line2 = line.split()
+   Ai = []
+   for each in line2:
+      Ai.append(float(each))
+   return Ai
+
 def quadrature_trapez(leftLimit, rightLimit, dx, fun):
     print("Funkcja: {} w zakresie od {} do {} w skoku {}".format(Co_liczy,leftLimit,rightLimit,dx))
     x = np.arange(leftLimit, rightLimit, dx)
@@ -36,4 +49,8 @@ def met_trapv2(f, a, b, n):
 
 def f11(x):
    return (x**2)*(np.cos(x)**3)
+
+def funckja_z_WspA(x):
+    wspA = get_wsp_A()
+    return wspA[0]*(x**0) + wspA[1]*(x**1) + wspA[2]*(x**2) + wspA[3]*(x**3) + wspA[4]*(x**4)
 

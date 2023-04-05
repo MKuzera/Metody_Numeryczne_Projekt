@@ -43,3 +43,15 @@ def Horner():
     print(suma)
     end = datetime.now()
     print("Elapsed", (end - start).total_seconds() * 10 ** 6, "µs")
+
+
+def horner_2(wspA, x):
+    suma = float(0)
+    K = len(wspA) -1
+    for i in range(K, -1, -1):
+        if (i == K):
+            suma = float(wspA[i])
+        else:
+            suma = float(wspA[i]) + x * suma
+
+    return suma
