@@ -27,7 +27,7 @@ def aproxymacja(lewa , prawa , functions_of_funkcja , ilosc_jednomainow):# 1 - 1
 
 
 
-if __name__ == '__main__':
+""" Kod z zajęc
 
   functions_of_funkcja_simus_x = funkcje_do_zadania.functions_of_sinus # przypisuje ktora tablice dac
   g = aproxymacja(0,math.pi/2 ,functions_of_funkcja_simus_x,3)
@@ -52,3 +52,4 @@ if __name__ == '__main__':
   arr2 = np.array(b)
   wynik= funkcje_do_zadania.gauss_2(arr,arr2)
   print("Dla funkcji e^x * sin(x/2) - x^3 z przedzialu <{},{}> : 'a0 , a1 , a2 , a3 , a4' {} ".format(-1,1,wynik))
+"""

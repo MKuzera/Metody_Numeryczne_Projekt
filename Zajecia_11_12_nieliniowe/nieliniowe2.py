@@ -91,8 +91,9 @@ def regulaFalsi_looped(a,b,f,dokladnosc,krok):
 
     return tab
 
-if __name__ == '__main__':
 
+
+""" Kod z zajec:
    print("Bisekcja")
    print("Funckja 1")
    start = time.time()
@@ -128,5 +129,5 @@ if __name__ == '__main__':
    start = time.time()
 
 
-
+"""
 
